@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TEMA 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1>DISEÑO DE INTERFAZ WEB</h1>
+            <ol start="1">
+                <li class="a"><a href="t1.html">TEMA 1</a></li>
+                <li class="b"><a href="">TEMA 2</a></li>
+                <li class="c"><a href="">TEMA 3</a></li>
+                <li class="d"><a href="">TEMA 4</a></li>
+                <li class="e"><a href="">TEMA 5</a></li>
+                </ul>
+        </div>
+    </nav>
+    <section>
+        <h1>TIPS HTML</h1>
+        <a href="https://markodenic.com/html-tips/">Fuente<a>
+                <ol start="1">
+
+
+                    <li><h3>El atributo `loading=lazy`</h3></li>
+                    <p>Consejo de rendimiento. Puede usar el loading=lazyatributo para diferir la carga de la imagen
+                        hasta que el usuario se desplace hacia ellos.</p>
+                    <blockquote> &lt;img src='image.jpg' loading='lazy' alt='Alternative Text'&gt;</blockquote>
+                    
+                    
+                    <hr/>
+                    <li><h3>Enlaces de correo electrónico, llamadas y SMS:</h3></li>
+                    <blockquote>
+                        <p>&lt;a href="mailto:{email}?subject={subject}&body={content}"&gt;
+                            Send us an email
+                            &lt;/a&gt;</p>
+
+                        <p>&lt;a href="tel:{phone}"&gt;
+                            Call us
+                            &lt;/a&gt;</p>
+
+                        <p>&lt;a href="sms:{phone}?body={content}"&gt;
+                            Send us a message
+                            &lt;/a&gt; </p>
+                    </blockquote>
+<hr/>
+
+
+                    <li><h3>Atributo `inicio` de listas ordenadas.</h3></li>
+                    <blockquote>
+                        <p>&lt;ol start="11"&gt;</p>
+                        <p>&lt;li&gt;HTML&lt;/li&gt;</p>
+                        <p>&lt;li&gt;CSS&lt;/li&gt;</p>
+                        <p>&lt;li&gt;Javascript&lt;/li&gt;</p>
+                        <p>&lt;/ol&gt;</p>
+                    </blockquote>
+                    <p><b>Resultado del código:</b></p>
+                    <ol start="11">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ol>
+
+
+                    <hr/>
+                    <li><h3>El elemento `metro`</h3></li>
+                    <p>Puede utilizar el &lt;meter&gt;elemento para mostrar cantidades. No se necesita JavaScript/CSS.
+                    </p>
+                    <blockquote>
+                        <p>&lt;label for="value1"&gt;Low&lt;/label&gt;</p>
+                        <p>&lt;meter id="value1" min="0" max="100" low="30" high="75" optimum="80"
+                            value="25"&gt;&lt;/meter&gt;</p>
+
+                        <p>&lt;label for="value2"&gt;Medium&lt;/label&gt;</p>
+                        <p>&lt;meter id="value2" min="0" max="100" low="30" high="75" optimum="80"
+                            value="50"&gt;&lt;/meter&gt;</p>
+
+                        <p>&lt;label for="value3"&gt;High&lt;/label&gt;</p>
+                        <p>&lt;meter id="value3" min="0" max="100" low="30" high="75" optimum="80"
+                            value="80"&gt;&lt;/meter&gt;</p>
+                    </blockquote>
+                    <p><b>Resultado del código:</b></p>
+                    <label for="value1">Low</label>
+                    <meter id="value1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+
+                    <label for="value2">Medium</label>
+                    <meter id="value2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+
+                    <label for="value3">High</label>
+                    <meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+
+
+                    <hr/>
+                    <li><h3>Búsqueda nativa HTML</h3></li>
+                    <blockquote>
+                        <p>&lt;div class="wrapper"&gt;</p>
+                        <p> &lt;h1&gt;
+                            Native HTML Search
+                            &lt;/h1&gt;</p>
+
+                        <p> &lt;input list="items"&gt;</p>
+
+                        <p>&lt;datalist id="items"&gt;
+                            &lt;option value="Marko Denic"&gt;
+                            &lt;option value="FreeCodeCamp"&gt;
+                            &lt;option value="FreeCodeTools"&gt;
+                            &lt;option value="Web Development"&gt;
+                            &lt;option value="Web Developer"&gt;
+                            &lt;/datalist&gt;
+                            &lt;/div&gt;</p>
+                    </blockquote>
+                    <p><b>Resultado del código:</b></p>
+                    <div class="wrapper">
+                        <p>
+                            Busqueda HTML nativa
+                        </p>
+
+                        <input list="items">
+
+                        <datalist id="items">
+                            <option value="Marko Denic">
+                            <option value="FreeCodeCamp">
+                            <option value="FreeCodeTools">
+                            <option value="Web Development">
+                            <option value="Web Developer">
+                        </datalist>
+                    </div>
+
+
+                    <hr/>
+                    <li><h3>Elemento de conjunto de campos</h3></li>
+                    <p>Puede usar el &lt;fieldset&gt;elemento para agrupar varios controles, así como etiquetas ( &lt;label&gt;) dentro de un formulario web.
+                        <p>&lt;form&gt;</p>
+                        <p>&lt;fieldset&gt;</p>
+                        <p> &lt;legend&gt;Choose your favorite language&lt;/legend&gt;</p>
+                        
+                        <p> &lt;input type="radio" id="javascript" name="language"&gt;</p>
+                        <p> &lt;label for="javascript"&gt;JavaScript&lt;/label&gt;&lt;br/&gt;</p>
+                        
+                        <p> &lt;input type="radio" id="python" name="language"&gt;</p>
+                        <p> &lt;label for="python"&gt;Python&lt;/label&gt;&lt;br/&gt;</p>
+                        
+                        <p> &lt;input type="radio" id="java" name="language"&gt;</p>
+                        <p> &lt;label for="java"&gt;Java&lt;/label&gt;</p>
+                            <p>&lt;/fieldset&gt;</p>
+                          <p>&lt;/form&gt;</p>
+                          <p><b>Resultado del código:</b></p></p>
+                        <form>
+                            <fieldset>
+                              <legend>Elige tu lenguaje favorito</legend>
+                          
+                              <input type="radio" id="javascript" name="language">
+                              <label for="javascript">JavaScript</label><br/>
+                          
+                              <input type="radio" id="python" name="language">
+                              <label for="python">Python</label><br/>
+                          
+                              <input type="radio" id="java" name="language">
+                              <label for="java">Java</label>
+                            </fieldset>
+                          </form>
+
+    </section>
+</body>
+
+</html>
