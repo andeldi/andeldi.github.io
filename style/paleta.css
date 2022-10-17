@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body {
+font-family:'Roboto';
+background-color:#ffcccb;
+padding-bottom:5%;}
+nav {background-color: #795548;
+position:sticky;
+left:0;
+right:0;
+top:0;}
+section {background-color:white;}
+h1,h2,h3{background-color: #ef9a9a;
+font-family: "Roboto";
+color:white}
+ul{ list-style-type: none;
+    margin: 0;
+    padding:0;
+overflow: hidden;
+display:flex;
+justify-content:center;}
+li{float: left;}
+li a {display:block;
+text-align:center;
+margin: 25%;
+color:black;}
+li a:hover{ background-color: #a98274;
+margin:25%;}
+.titulo{
+    color:black;
+    background-color:transparent;
+}
+.active{
+    color:white;
+}
+footer{background-color: #795548;
+position:sticky;}
+.container{
+margin:0px auto;
+align-items:center;
+justify-content: space-between;
+}
