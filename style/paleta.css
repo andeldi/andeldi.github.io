@@ -17,7 +17,14 @@ margin:0;
 padding:1%;
 justify-content:space-between;}
 section {background-color:white;}
-h1,h2,h3{background-color: #ef9a9a;
+h1:nth-child(2){
+  background-color: #ef9a9a;
+  font-family: "Roboto";
+  text-align:center;
+  color:white;
+  font-size:250%;
+}
+h2,h3{background-color: #ef9a9a;
 font-family: "Roboto";
 color:white}
 .container>ol{ list-style-type: none;     
