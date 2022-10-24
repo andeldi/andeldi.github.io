@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TEMA 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style/paleta.css">
+    <style>
+        .p1 {
+          font-family: "Times New Roman", Times, serif;
+        }
+        
+        .p2 {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .p3 {
+          font-family: "Lucida Console", "Courier New", monospace;
+        }
+        </style>
+    
+   
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="titulo"><a href="dintt.html">DISEÑO DE INTERFAZ WEB</a></h1>
+            <ul>
+                <li class="z"> <a href="intro.html">GENERAL</a></li>
+                <li class="active"><a href="t1.html">TEMA 1</a></li>
+                <li class="b"><a href="">TEMA 2</a></li>
+                <li class="c"><a href="">TEMA 3</a></li>
+                <li class="d"><a href="">TEMA 4</a></li>
+                <li class="e"><a href="">TEMA 5</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Fuentes CSS</h1>
+    <section>
+    <h2>Introducción</h2>
+    <p>Elegir la fuente correcta tiene un gran impacto en cómo los lectores experimentan un sitio web.
+
+        La fuente correcta puede crear una fuerte identidad para su marca.
+        
+        Es importante usar una fuente que sea fácil de leer. La fuente agrega valor a su texto. También es importante elegir el color y el tamaño de texto correctos para la fuente.</p>
+    </section>
+    <br>
+    <section>
+        <h2>Familias de fuentes genéricas</h2>
+        <p>En CSS hay cinco familias de fuentes genéricas:</p>
+<p><ol>
+  <li><strong>Las fuentes Serif </strong> tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de formalidad y elegancia.</li><br>
+  <li><strong>Las fuentes Sans-serif</strong> tienen líneas limpias (sin pequeños trazos adjuntos). Crean un aspecto moderno y minimalista.</li><br>
+  <li><strong>Las fuentes Monospace</strong> aquí todas las letras tienen el mismo ancho fijo. Crean un aspecto mecánico. </li><br>
+  <li><strong>Las fuentes Cursive</strong> imitan la escritura humana.</li><br>
+  <li><strong>Las fuentes Fantasy</strong> son fuentes decorativas/divertidas.</li><br>
+</ol>
+</p>
+
+<p>Todos los diferentes nombres de fuentes pertenecen a una de las familias de fuentes genéricas. </p>
+    <img src="img/fonts.jpg"></section>
+    <br>
+    <section>
+        <h2>Algunos ejemplos de fuentes</h2>
+        <table class="ws-table-all notranslate">
+            <tr>
+            <th style="width:20%">Familia de fuente genérica</th>
+            <th style="width:30%">Ejemplos de nombres de fuentes</th>
+            </tr>
+            <tr>
+            <td>Serif</td>
+            <td><span style="font-size:150%;font-family:'Times New Roman',serif">Times New Roman</span><br>
+            <span style="font-size:150%;font-family:Georgia,serif">Georgia</span><br>
+            <span style="font-size:150%;font-family:Garamond,serif">Garamond</span><br>
+            </td>
+            </tr>
+            <tr>
+            <td>Sans-serif</td>
+            <td><span style="font-size:150%;font-family:Arial,sans-serif">Arial</span><br>
+            <span style="font-size:150%;font-family:Verdana,sans-serif">Verdana</span><br>
+            <span style="font-size:150%;font-family:Helvetica,sans-serif">Helvetica</span><br>
+            </td>
+            </tr>
+            <tr>
+            <td>Monospace</td>
+            <td><span style="font-size:150%;font-family:'Courier New',monospace">Courier New</span><br>
+            <span style="font-size:150%;font-family:'Lucida Console',monospace">Lucida Console</span><br>
+            <span style="font-size:150%;font-family:Monaco,monospace">Monaco</span>
+            </td>
+            </tr>
+            <tr>
+            <td>Cursive</td>
+            <td><span style="font-size:150%;font-family:'Brush Script MT',cursive">Brush Script MT</span><br>
+            <span style="font-size:150%;font-family:'Lucida Handwriting',cursive">Lucida Handwriting</span><br>
+            </td>
+            </tr>
+            <tr>
+            <td>Fantasy</td>
+            <td><span style="font-size:150%;font-family:Copperplate,fantasy">Copperplate</span><br>
+            <span style="font-size:150%;font-family:Papyrus,fantasy">Papyrus</span>
+            </td>
+            </tr>
+            </table>
+    </section>
+    <br>
+    <section>
+        <h2>Propiedades de la familia de fuentes CSS</h2>
+        <p>En CSS usamos la propiedad <b>font-family</b> para especificar la fuente de un texto. Debe contener varios nombres de fuentes como un sistema "alternativo" para garantizar la máxima compatibilidad entre navegadores y sistemas operativos. Comience con la fuente que desee y termine con una fuente genérica. Los nombres de las fuentes deben estar separados por comas.</p>
+        <h4>Ejemplo de código CSS:</h4>
+        <code><div class="codigo">.p1 {
+            font-family: "Times New Roman", Times, serif;
+          }<br>
+          
+          .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+          }<br>
+          
+          .p3 {
+            font-family: "Lucida Console", "Courier New", monospace;
+          }<br></div></code>
+        <h4>Resultado:</h4>
+    <p class="p1">Este párrafo usa la fuente Times New Roman.</p>
+    <p class="p2">Este párrafo usa la fuente Arial.</p>
+    <p class="p3">Este párrafo usa la fuente Lucida Console.</p>
+    </section>
+</body>
+<footer>Creado por Andrea Delgado para el curso 22/23 de segundo de DAW</footer>
+
+</html>
