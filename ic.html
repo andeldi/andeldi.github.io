@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TEMA 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style/paleta.css">
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(./md-iconos/MaterialIcons-Regular.ttf);
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+        .material-icons.md-48{ font-size: 48px;}
+        .material-icons.c{color:#4b2c20;}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="titulo"><a href="dintt.html">DISEÑO DE INTERFAZ WEB</a></h1>
+            <ul>
+                <li class="z"> <a href="intro.html">GENERAL</a></li>
+                <li class="active"><a href="t1.html">TEMA 1</a></li>
+                <li class="b"><a href="">TEMA 2</a></li>
+                <li class="c"><a href="">TEMA 3</a></li>
+                <li class="d"><a href="">TEMA 4</a></li>
+                <li class="e"><a href="">TEMA 5</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Iconos configurados con hosting propio</h1>
+    <section>
+        <h2>Introducción</h2>
+        <p>Para quienes quieran alojar la fuente web por su cuenta, se necesita un poco de configuración adicional.
+            Aloja la fuente del ícono en una ubicación (por ejemplo, https://example.com/material-icons.woff) y agrega
+            la siguiente regla de CSS:</p>
+        <code><div class="codigo">@font-face {<br>
+                font-family: 'Material Icons';<br>
+                font-style: normal;<br>
+                font-weight: 400;<br>
+                src: url(./Fuentes/MaterialIcons-Regular.ttf);<br>
+                /* For IE6-8 */<br>
+                src: local('Material Icons'),<br>
+                 local('MaterialIcons-Regular'),
+                 url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+                 url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+                 url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');<br>
+               }</div></code>
+        <p>Además, se deben declarar las reglas de CSS para renderizar el ícono a fin de renderizar la fuente de forma
+            adecuada. Por lo general, estas reglas se entregan como parte de la hoja de estilo Google Web Font, pero se
+            deberán incluir manualmente en tus proyectos cuando se aloje la fuente:</p>
+        <code><div class="codigo">.material-icons {<br>
+                font-family: 'Material Icons';<br>
+                font-weight: normal;<br>
+                font-style: normal;<br>
+                font-size: 24px;  /* Preferred icon size */<br>
+                display: inline-block;<br>
+                line-height: 1;<br>
+                text-transform: none;<br>
+                letter-spacing: normal;<br>
+                word-wrap: normal;<br>
+                white-space: nowrap;<br>
+                direction: ltr;<br>
+                <br>
+                /* Support for all WebKit browsers. */<br>
+                -webkit-font-smoothing: antialiased;<br>
+                /* Support for Safari and Chrome. */<br>
+                text-rendering: optimizeLegibility;<br>
+                <br>
+                /* Support for Firefox. */<br>
+                -moz-osx-font-smoothing: grayscale;<br>
+                <br>
+                /* Support for IE. */<br>
+                font-feature-settings: 'liga';
+              }</div></code>
+              <br>
+        <h4>Ejemplo de icono simple: </h4>
+        <code> <div class="codigo">&lt;span class="material-icons"&gt;face&lt;/span&gt;<span class="material-icons">face</span></div></code>
+        <br>
+        <h4>Ejemplo de botón con icono</h4>
+        <code><div class="codigo">&lt;button&gt;&lt;span class="material-icons"&gt;face&lt;/span&gt;&lt;/button&gt;<button><span class="material-icons">face</span></button></div></code>
+        <br>
+        <h4>Ejemplo de lista de hipervinculos</h4>
+        <code><div class="codigo">&lt;ul&gt;<br>
+            &lt;li&gt;&lt;a href="about:blank"&gt;<br>
+                &lt;span class="material-icons"&gt;<br>
+                 face
+                &lt;/span&gt;<br>
+               &lt;/a&gt;<br>
+               &lt;/li&gt;<br>
+               &lt;li&gt;&lt;a href="about:blank"&gt;<br>
+                &lt;span class="material-icons"&gt;<br>
+                 home
+                &lt;/span&gt;<br>
+               &lt;/a&gt;<br>
+               &lt;/li&gt;<br>
+               &lt;li&gt;&lt;a href="about:blank"&gt;<br>
+                &lt;span class="material-icons"&gt;tv<br>
+                &lt;/span&gt;<br>
+               &lt;/a&gt;<br>
+               &lt;/li&gt;<br>
+               &lt;li&gt;&lt;a href="about:blank"&gt;<br>
+                &lt;span class="material-icons"&gt;<br>
+                 settings
+                &lt;/span&gt;<br>
+               &lt;/a&gt;<br>
+               &lt;/li&gt;<br>
+            &lt;/ul&gt;<br></div></code>
+        <ul>
+        <li><a href="about:blank">
+            <span class="material-icons">
+             face
+            </span>
+           </a>
+           </li>
+           <li><a href="about:blank">
+            <span class="material-icons">
+             home
+            </span>
+           </a>
+           </li>
+           <li><a href="about:blank">
+            <span class="material-icons">tv
+            </span>
+           </a>
+           </li>
+           <li><a href="about:blank">
+            <span class="material-icons">
+             settings
+            </span>
+           </a>
+           </li>
+        </ul>
+        <br>
+        <h4>Ejemplo icono modificado de tamaño</h4>
+        <code><div class="codigo">&lt;span class="material-icons md-48"&gt;face&lt;/span&gt;
+            <span class="material-icons md-48">face</span></div></code>
+            <br>
+            <h4>Ejemplo icono con color modificado</h4>
+        <code><div class="codigo">&lt;span class="material-icons c"&gt;face&lt;/span&gt;
+            <span class="material-icons c">face</span></div></code>
+            <br>
+    </section>
+</body>
